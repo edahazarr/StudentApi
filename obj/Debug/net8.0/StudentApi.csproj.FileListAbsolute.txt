@@ -162,3 +162,4 @@
 /Users/edahazar/StudentApi/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/StudentApi.xml
 /Users/edahazar/StudentApi/obj/Debug/net8.0/StudentApi.xml
+/Users/edahazar/StudentApi/obj/Debug/net8.0/StudentApi.sourcelink.json

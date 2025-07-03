@@ -17,8 +17,5 @@ namespace StudentApi.Models1
 
         [Required, EmailAddress]
         public string Email { get; set; } = string.Empty;
-        public int DepartmentId { get; set; }
-public Department Department { get; set; }
-
     }
 }

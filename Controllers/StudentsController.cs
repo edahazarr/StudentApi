@@ -39,10 +39,10 @@ namespace StudentApi.Controllers
         [HttpPost]
         public ActionResult<Student> CreateStudent(Student student)
         {
-            _context.Students.Add(student);
-            _context.SaveChanges();
-            return Ok(student);
-        }
+          _context.Students.Add(student);
+    _context.SaveChanges();
+    return Ok(student);
+}
 
         /// <summary>
         /// Varolan öğrenciyi günceller.
@@ -85,6 +85,40 @@ namespace StudentApi.Controllers
             _context.SaveChanges();
 
             return Ok($"Öğrenci başarıyla silindi: ID = {id}");
+        }
+
+        /// <summary>
+        /// Öğrencileri Ad, Soyad veya Email’e göre filtreleyerek listeler.
+        /// Parametreler opsiyoneldir, herhangi biri veya birkaçı ile arama yapılabilir.
+        /// </summary>
+        /// <param name="firstName">Öğrencinin adı (opsiyonel)</param>
+        /// <param name="lastName">Öğrencinin soyadı (opsiyonel)</param>
+        /// <param name="email">Öğrencinin email adresi (opsiyonel)</param>
+        /// <returns>Filtrelenmiş öğrenci listesi (DTO olarak)</returns>
+        [HttpGet("search")]
+        public ActionResult<IEnumerable<StudentDto>> SearchStudents(string? firstName, string? lastName, string? email)
+        {
+            var query = _context.Students.AsQueryable();
+
+            if (!string.IsNullOrEmpty(firstName))
+            {
+                query = query.Where(s => s.FirstName.Contains(firstName));
+            }
+
+            if (!string.IsNullOrEmpty(lastName))
+            {
+                query = query.Where(s => s.LastName.Contains(lastName));
+            }
+
+            if (!string.IsNullOrEmpty(email))
+            {
+                query = query.Where(s => s.Email.Contains(email));
+            }
+
+            var filteredStudents = query.ToList();
+            var result = _mapper.Map<List<StudentDto>>(filteredStudents);
+
+            return Ok(result);
         }
     }
 }
