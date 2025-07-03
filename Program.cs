@@ -1,10 +1,17 @@
 using Microsoft.EntityFrameworkCore;
 using StudentApi.Models1;
 using FluentValidation.AspNetCore;
+using Serilog;
 var builder = WebApplication.CreateBuilder(args);
+// Serilog yapılandırması
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
+builder.Host.UseSerilog(); // Serilog’u host’a bağla
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers()
     .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<StudentValidator>());
 builder.Services.AddEndpointsApiExplorer();
@@ -18,16 +25,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=student.db"));
     builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 app.UseHttpsRedirection();
-
+app.MapControllers();
+app.Run();
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

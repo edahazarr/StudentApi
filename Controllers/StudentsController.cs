@@ -3,6 +3,7 @@ using StudentApi.Models1;
 using AutoMapper;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Extensions.Logging;  // ILogger için
 
 namespace StudentApi.Controllers
 {
@@ -12,51 +13,47 @@ namespace StudentApi.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
+        private readonly ILogger<StudentsController> _logger; // ILogger eklendi
 
-        public StudentsController(AppDbContext context, IMapper mapper)
+        public StudentsController(AppDbContext context, IMapper mapper, ILogger<StudentsController> logger)
         {
             _context = context;
             _mapper = mapper;
+            _logger = logger;  // DI ile alındı
         }
 
-        /// <summary>
-        /// Tüm öğrencileri listeleyen metot.
-        /// </summary>
-        /// <returns>Öğrenci listesini döner.</returns>
         [HttpGet]
         public ActionResult<IEnumerable<StudentDto>> GetStudents()
         {
             var students = _context.Students.ToList();
             var studentDtos = _mapper.Map<List<StudentDto>>(students);
+
+            _logger.LogInformation("Students listed from database. Count: {Count}", studentDtos.Count);
+
             return Ok(studentDtos);
         }
 
-        /// <summary>
-        /// Yeni öğrenci oluşturur.
-        /// </summary>
-        /// <param name="student">Yeni öğrenci bilgileri.</param>
-        /// <returns>Oluşturulan öğrenci nesnesini döner.</returns>
         [HttpPost]
         public ActionResult<Student> CreateStudent(Student student)
         {
-          _context.Students.Add(student);
-    _context.SaveChanges();
-    return Ok(student);
-}
+            _context.Students.Add(student);
+            _context.SaveChanges();
 
-        /// <summary>
-        /// Varolan öğrenciyi günceller.
-        /// </summary>
-        /// <param name="id">Güncellenecek öğrencinin Id'si.</param>
-        /// <param name="updatedStudent">Yeni öğrenci bilgileri.</param>
-        /// <returns>Güncellenmiş öğrenci nesnesi.</returns>
+            _logger.LogInformation("Student created with ID: {Id}, Name: {FirstName} {LastName}", student.Id, student.FirstName, student.LastName);
+
+            return Ok(student);
+        }
+
         [HttpPut("{id}")]
         public IActionResult UpdateStudent(int id, Student updatedStudent)
         {
             var existingStudent = _context.Students.FirstOrDefault(s => s.Id == id);
 
             if (existingStudent == null)
+            {
+                _logger.LogWarning("Update failed. Student not found with ID: {Id}", id);
                 return NotFound($"Öğrenci bulunamadı: ID = {id}");
+            }
 
             existingStudent.FirstName = updatedStudent.FirstName;
             existingStudent.LastName = updatedStudent.LastName;
@@ -65,36 +62,30 @@ namespace StudentApi.Controllers
 
             _context.SaveChanges();
 
+            _logger.LogInformation("Student updated with ID: {Id}, Name: {FirstName} {LastName}", existingStudent.Id, existingStudent.FirstName, existingStudent.LastName);
+
             return Ok(existingStudent);
         }
 
-        /// <summary>
-        /// Belirtilen Id'ye sahip öğrenciyi siler.
-        /// </summary>
-        /// <param name="id">Silinecek öğrencinin Id'si.</param>
-        /// <returns>Başarı mesajı döner.</returns>
         [HttpDelete("{id}")]
         public IActionResult DeleteStudent(int id)
         {
             var student = _context.Students.FirstOrDefault(s => s.Id == id);
 
             if (student == null)
+            {
+                _logger.LogWarning("Delete failed. Student not found with ID: {Id}", id);
                 return NotFound($"Silinecek öğrenci bulunamadı: ID = {id}");
+            }
 
             _context.Students.Remove(student);
             _context.SaveChanges();
 
+            _logger.LogInformation("Student deleted with ID: {Id}", id);
+
             return Ok($"Öğrenci başarıyla silindi: ID = {id}");
         }
 
-        /// <summary>
-        /// Öğrencileri Ad, Soyad veya Email’e göre filtreleyerek listeler.
-        /// Parametreler opsiyoneldir, herhangi biri veya birkaçı ile arama yapılabilir.
-        /// </summary>
-        /// <param name="firstName">Öğrencinin adı (opsiyonel)</param>
-        /// <param name="lastName">Öğrencinin soyadı (opsiyonel)</param>
-        /// <param name="email">Öğrencinin email adresi (opsiyonel)</param>
-        /// <returns>Filtrelenmiş öğrenci listesi (DTO olarak)</returns>
         [HttpGet("search")]
         public ActionResult<IEnumerable<StudentDto>> SearchStudents(string? firstName, string? lastName, string? email)
         {
@@ -117,6 +108,8 @@ namespace StudentApi.Controllers
 
             var filteredStudents = query.ToList();
             var result = _mapper.Map<List<StudentDto>>(filteredStudents);
+
+            _logger.LogInformation("Students searched. Filter count: {Count}", result.Count);
 
             return Ok(result);
         }

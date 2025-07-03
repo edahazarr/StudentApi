@@ -1,0 +1,276 @@
+2025-07-03 18:16:38.249 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-07-03 18:16:38.284 +03:00 [DBG] Hosting starting
+2025-07-03 18:16:38.308 +03:00 [INF] Now listening on: http://localhost:5194
+2025-07-03 18:16:38.308 +03:00 [DBG] Loaded hosting startup assembly StudentApi
+2025-07-03 18:16:38.309 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-03 18:16:38.309 +03:00 [INF] Hosting environment: Development
+2025-07-03 18:16:38.309 +03:00 [INF] Content root path: /Users/edahazar/StudentApi
+2025-07-03 18:16:38.309 +03:00 [DBG] Hosting started
+2025-07-03 18:16:47.253 +03:00 [DBG] Connection id "0HNDQ8IGAKCLN" accepted.
+2025-07-03 18:16:47.254 +03:00 [DBG] Connection id "0HNDQ8IGAKCLN" started.
+2025-07-03 18:16:47.274 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/ - null null
+2025-07-03 18:16:47.276 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-07-03 18:16:47.282 +03:00 [DBG] No candidates found for the request path '/'
+2025-07-03 18:16:47.282 +03:00 [DBG] Request did not match any endpoints
+2025-07-03 18:16:47.298 +03:00 [DBG] The request path  does not match the path filter
+2025-07-03 18:16:47.299 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-07-03 18:16:47.301 +03:00 [DBG] Connection id "0HNDQ8IGAKCLN" completed keep alive response.
+2025-07-03 18:16:47.302 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/ - 404 0 null 29.2737ms
+2025-07-03 18:16:47.307 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/, Response status code: 404
+2025-07-03 18:16:49.952 +03:00 [DBG] Connection id "0HNDQ8IGAKCLN" received FIN.
+2025-07-03 18:16:49.959 +03:00 [DBG] Connection id "0HNDQ8IGAKCLN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-03 18:16:49.965 +03:00 [DBG] Connection id "0HNDQ8IGAKCLN" disconnecting.
+2025-07-03 18:16:49.966 +03:00 [DBG] Connection id "0HNDQ8IGAKCLN" stopped.
+2025-07-03 18:16:51.768 +03:00 [DBG] Connection id "0HNDQ8IGAKCLO" accepted.
+2025-07-03 18:16:51.768 +03:00 [DBG] Connection id "0HNDQ8IGAKCLO" started.
+2025-07-03 18:16:51.769 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2025-07-03 18:16:51.769 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-07-03 18:16:51.769 +03:00 [DBG] Request did not match any endpoints
+2025-07-03 18:16:51.836 +03:00 [DBG] Connection id "0HNDQ8IGAKCLO" completed keep alive response.
+2025-07-03 18:16:51.837 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 200 null text/html;charset=utf-8 67.9957ms
+2025-07-03 18:16:51.956 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - null null
+2025-07-03 18:16:51.957 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-07-03 18:16:51.957 +03:00 [DBG] Request did not match any endpoints
+2025-07-03 18:16:52.032 +03:00 [DBG] Connection id "0HNDQ8IGAKCLO" completed keep alive response.
+2025-07-03 18:16:52.032 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.2356ms
+2025-07-03 18:16:54.953 +03:00 [DBG] Connection id "0HNDQ8IGAKCLO" received FIN.
+2025-07-03 18:16:54.954 +03:00 [DBG] Connection id "0HNDQ8IGAKCLO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-03 18:16:54.954 +03:00 [DBG] Connection id "0HNDQ8IGAKCLO" disconnecting.
+2025-07-03 18:16:54.955 +03:00 [DBG] Connection id "0HNDQ8IGAKCLO" stopped.
+2025-07-03 18:21:30.369 +03:00 [DBG] Connection id "0HNDQ8IGAKCLP" accepted.
+2025-07-03 18:21:30.370 +03:00 [DBG] Connection id "0HNDQ8IGAKCLP" started.
+2025-07-03 18:21:30.371 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Students - null null
+2025-07-03 18:21:30.382 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Students'
+2025-07-03 18:21:30.386 +03:00 [DBG] Endpoint 'StudentApi.Controllers.StudentsController.GetStudents (StudentApi)' with route pattern 'api/Students' is valid for the request path '/api/Students'
+2025-07-03 18:21:30.389 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.StudentsController.GetStudents (StudentApi)'
+2025-07-03 18:21:30.393 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-03 18:21:30.394 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.StudentsController.GetStudents (StudentApi)'
+2025-07-03 18:21:30.416 +03:00 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[StudentApi.Models1.StudentDto]] GetStudents() on controller StudentApi.Controllers.StudentsController (StudentApi).
+2025-07-03 18:21:30.417 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-03 18:21:30.417 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-03 18:21:30.417 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-03 18:21:30.417 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-03 18:21:30.417 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-03 18:21:30.418 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.StudentsController (StudentApi)
+2025-07-03 18:21:30.473 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-07-03 18:21:30.505 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.StudentsController (StudentApi)
+2025-07-03 18:21:30.849 +03:00 [DBG] Entity Framework Core 9.0.6 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.6' with options: None
+2025-07-03 18:21:30.855 +03:00 [DBG] Compiling query expression: 
+'DbSet<Student>()'
+2025-07-03 18:21:30.933 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Student>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.BirthDate (DateTime) Required, 1], [Property: Student.Email (string) Required, 2], [Property: Student.FirstName (string) Required, 3], [Property: Student.LastName (string) Required, 4] }
+        SELECT s.Id, s.BirthDate, s.Email, s.FirstName, s.LastName
+        FROM Students AS s) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.BirthDate (DateTime) Required, 1], [Property: Student.Email (string) Required, 2], [Property: Student.FirstName (string) Required, 3], [Property: Student.LastName (string) Required, 4] }
+        SELECT s.Id, s.BirthDate, s.Email, s.FirstName, s.LastName
+        FROM Students AS s, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Student entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Student instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Student);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Student.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("StudentApi.Models1.Student").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Student)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")]: 
+                        {
+                            return 
+                            {
+                                Student instance;
+                                instance = new Student();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<BirthDate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Email>k__BackingField = dataReader.GetString(2);
+                                instance.<FirstName>k__BackingField = dataReader.GetString(3);
+                                instance.<LastName>k__BackingField = dataReader.GetString(4);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Student)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: StudentApi.Models1.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-07-03 18:21:30.942 +03:00 [DBG] Creating DbConnection.
+2025-07-03 18:21:30.947 +03:00 [DBG] Created DbConnection. (4ms).
+2025-07-03 18:21:30.947 +03:00 [DBG] Opening connection to database 'main' on server 'student.db'.
+2025-07-03 18:21:30.951 +03:00 [DBG] Opened connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-03 18:21:30.952 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-07-03 18:21:30.954 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-07-03 18:21:30.954 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-07-03 18:21:30.956 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName"
+FROM "Students" AS "s"
+2025-07-03 18:21:30.961 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName"
+FROM "Students" AS "s"
+2025-07-03 18:21:30.971 +03:00 [DBG] Context 'AppDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-07-03 18:21:30.978 +03:00 [DBG] Context 'AppDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-07-03 18:21:30.978 +03:00 [DBG] Context 'AppDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-07-03 18:21:30.978 +03:00 [DBG] Context 'AppDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-07-03 18:21:30.978 +03:00 [DBG] Closing data reader to 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-03 18:21:30.980 +03:00 [DBG] A data reader for 'main' on server '/Users/edahazar/StudentApi/student.db' is being disposed after spending 17ms reading results.
+2025-07-03 18:21:30.981 +03:00 [DBG] Closing connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-03 18:21:30.982 +03:00 [DBG] Closed connection to database 'main' on server 'student.db' (1ms).
+2025-07-03 18:21:30.986 +03:00 [INF] Students listed from database. Count: 4
+2025-07-03 18:21:30.987 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-03 18:21:30.988 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-07-03 18:21:30.988 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-07-03 18:21:30.988 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-07-03 18:21:30.988 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-07-03 18:21:30.988 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-07-03 18:21:30.988 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models1.StudentDto, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-03 18:21:31.005 +03:00 [INF] Executed action StudentApi.Controllers.StudentsController.GetStudents (StudentApi) in 587.2723ms
+2025-07-03 18:21:31.006 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.StudentsController.GetStudents (StudentApi)'
+2025-07-03 18:21:31.006 +03:00 [DBG] Connection id "0HNDQ8IGAKCLP" completed keep alive response.
+2025-07-03 18:21:31.006 +03:00 [DBG] 'AppDbContext' disposed.
+2025-07-03 18:21:31.007 +03:00 [DBG] Disposing connection to database 'main' on server 'student.db'.
+2025-07-03 18:21:31.008 +03:00 [DBG] Disposed connection to database 'main' on server 'student.db' (0ms).
+2025-07-03 18:21:31.008 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Students - 200 null application/json; charset=utf-8 637.0238ms
+2025-07-03 18:21:35.003 +03:00 [DBG] Connection id "0HNDQ8IGAKCLP" received FIN.
+2025-07-03 18:21:35.003 +03:00 [DBG] Connection id "0HNDQ8IGAKCLP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-03 18:21:35.004 +03:00 [DBG] Connection id "0HNDQ8IGAKCLP" disconnecting.
+2025-07-03 18:21:35.006 +03:00 [DBG] Connection id "0HNDQ8IGAKCLP" stopped.
+2025-07-03 18:25:52.493 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" accepted.
+2025-07-03 18:25:52.494 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" started.
+2025-07-03 18:25:52.497 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2025-07-03 18:25:52.497 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-07-03 18:25:52.500 +03:00 [DBG] Request did not match any endpoints
+2025-07-03 18:25:52.513 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" completed keep alive response.
+2025-07-03 18:25:52.513 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 200 null text/html;charset=utf-8 16.646ms
+2025-07-03 18:25:52.664 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - null null
+2025-07-03 18:25:52.664 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-07-03 18:25:52.665 +03:00 [DBG] Request did not match any endpoints
+2025-07-03 18:25:52.684 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" completed keep alive response.
+2025-07-03 18:25:52.685 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.7166ms
+2025-07-03 18:25:53.852 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/ - null null
+2025-07-03 18:25:53.852 +03:00 [DBG] No candidates found for the request path '/swagger/'
+2025-07-03 18:25:53.853 +03:00 [DBG] Request did not match any endpoints
+2025-07-03 18:25:53.863 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" completed keep alive response.
+2025-07-03 18:25:53.863 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/ - 301 0 null 11.0145ms
+2025-07-03 18:25:53.864 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2025-07-03 18:25:53.864 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-07-03 18:25:53.865 +03:00 [DBG] Request did not match any endpoints
+2025-07-03 18:25:53.865 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" completed keep alive response.
+2025-07-03 18:25:53.865 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 200 null text/html;charset=utf-8 1.0026ms
+2025-07-03 18:25:53.918 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - null null
+2025-07-03 18:25:53.918 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-07-03 18:25:53.918 +03:00 [DBG] Request did not match any endpoints
+2025-07-03 18:25:53.927 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" completed keep alive response.
+2025-07-03 18:25:53.927 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.7726ms
+2025-07-03 18:25:55.047 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" received FIN.
+2025-07-03 18:25:55.048 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-03 18:25:55.048 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" disconnecting.
+2025-07-03 18:25:55.049 +03:00 [DBG] Connection id "0HNDQ8IGAKCLQ" stopped.
+2025-07-03 18:26:01.725 +03:00 [DBG] Connection id "0HNDQ8IGAKCLR" accepted.
+2025-07-03 18:26:01.726 +03:00 [DBG] Connection id "0HNDQ8IGAKCLR" started.
+2025-07-03 18:26:01.726 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Students - null null
+2025-07-03 18:26:01.726 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Students'
+2025-07-03 18:26:01.726 +03:00 [DBG] Endpoint 'StudentApi.Controllers.StudentsController.GetStudents (StudentApi)' with route pattern 'api/Students' is valid for the request path '/api/Students'
+2025-07-03 18:26:01.726 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.StudentsController.GetStudents (StudentApi)'
+2025-07-03 18:26:01.727 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-03 18:26:01.727 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.StudentsController.GetStudents (StudentApi)'
+2025-07-03 18:26:01.729 +03:00 [INF] Route matched with {action = "GetStudents", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[StudentApi.Models1.StudentDto]] GetStudents() on controller StudentApi.Controllers.StudentsController (StudentApi).
+2025-07-03 18:26:01.729 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-03 18:26:01.729 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-03 18:26:01.730 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-03 18:26:01.730 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-03 18:26:01.730 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-03 18:26:01.730 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.StudentsController (StudentApi)
+2025-07-03 18:26:01.732 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.StudentsController (StudentApi)
+2025-07-03 18:26:01.755 +03:00 [DBG] Entity Framework Core 9.0.6 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.6' with options: None
+2025-07-03 18:26:01.756 +03:00 [DBG] Creating DbConnection.
+2025-07-03 18:26:01.756 +03:00 [DBG] Created DbConnection. (0ms).
+2025-07-03 18:26:01.756 +03:00 [DBG] Opening connection to database 'main' on server 'student.db'.
+2025-07-03 18:26:01.757 +03:00 [DBG] Opened connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-03 18:26:01.758 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-07-03 18:26:01.758 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-07-03 18:26:01.758 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-07-03 18:26:01.758 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName"
+FROM "Students" AS "s"
+2025-07-03 18:26:01.760 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName"
+FROM "Students" AS "s"
+2025-07-03 18:26:01.761 +03:00 [DBG] Context 'AppDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-07-03 18:26:01.761 +03:00 [DBG] Context 'AppDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-07-03 18:26:01.761 +03:00 [DBG] Context 'AppDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-07-03 18:26:01.761 +03:00 [DBG] Context 'AppDbContext' started tracking 'Student' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-07-03 18:26:01.761 +03:00 [DBG] Closing data reader to 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-03 18:26:01.762 +03:00 [DBG] A data reader for 'main' on server '/Users/edahazar/StudentApi/student.db' is being disposed after spending 0ms reading results.
+2025-07-03 18:26:01.762 +03:00 [DBG] Closing connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-03 18:26:01.762 +03:00 [DBG] Closed connection to database 'main' on server 'student.db' (0ms).
+2025-07-03 18:26:01.764 +03:00 [INF] Students listed from database. Count: 4
+2025-07-03 18:26:01.764 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-03 18:26:01.764 +03:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-07-03 18:26:01.764 +03:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-07-03 18:26:01.764 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-07-03 18:26:01.764 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-07-03 18:26:01.764 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-07-03 18:26:01.764 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[StudentApi.Models1.StudentDto, StudentApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-03 18:26:01.765 +03:00 [INF] Executed action StudentApi.Controllers.StudentsController.GetStudents (StudentApi) in 34.8961ms
+2025-07-03 18:26:01.765 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.StudentsController.GetStudents (StudentApi)'
+2025-07-03 18:26:01.765 +03:00 [DBG] Connection id "0HNDQ8IGAKCLR" completed keep alive response.
+2025-07-03 18:26:01.765 +03:00 [DBG] 'AppDbContext' disposed.
+2025-07-03 18:26:01.765 +03:00 [DBG] Disposing connection to database 'main' on server 'student.db'.
+2025-07-03 18:26:01.765 +03:00 [DBG] Disposed connection to database 'main' on server 'student.db' (0ms).
+2025-07-03 18:26:01.765 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Students - 200 null application/json; charset=utf-8 39.5291ms
+2025-07-03 18:26:05.049 +03:00 [DBG] Connection id "0HNDQ8IGAKCLR" received FIN.
+2025-07-03 18:26:05.050 +03:00 [DBG] Connection id "0HNDQ8IGAKCLR" disconnecting.
+2025-07-03 18:26:05.050 +03:00 [DBG] Connection id "0HNDQ8IGAKCLR" stopped.
+2025-07-03 18:26:05.051 +03:00 [DBG] Connection id "0HNDQ8IGAKCLR" sending FIN because: "The Socket transport's send loop completed gracefully."

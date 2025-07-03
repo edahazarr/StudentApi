@@ -4,44 +4,6 @@
         <name>StudentApi</name>
     </assembly>
     <members>
-        <member name="M:StudentApi.Controllers.StudentsController.GetStudents">
-            <summary>
-            Tüm öğrencileri listeleyen metot.
-            </summary>
-            <returns>Öğrenci listesini döner.</returns>
-        </member>
-        <member name="M:StudentApi.Controllers.StudentsController.CreateStudent(StudentApi.Models1.Student)">
-            <summary>
-            Yeni öğrenci oluşturur.
-            </summary>
-            <param name="student">Yeni öğrenci bilgileri.</param>
-            <returns>Oluşturulan öğrenci nesnesini döner.</returns>
-        </member>
-        <member name="M:StudentApi.Controllers.StudentsController.UpdateStudent(System.Int32,StudentApi.Models1.Student)">
-            <summary>
-            Varolan öğrenciyi günceller.
-            </summary>
-            <param name="id">Güncellenecek öğrencinin Id'si.</param>
-            <param name="updatedStudent">Yeni öğrenci bilgileri.</param>
-            <returns>Güncellenmiş öğrenci nesnesi.</returns>
-        </member>
-        <member name="M:StudentApi.Controllers.StudentsController.DeleteStudent(System.Int32)">
-            <summary>
-            Belirtilen Id'ye sahip öğrenciyi siler.
-            </summary>
-            <param name="id">Silinecek öğrencinin Id'si.</param>
-            <returns>Başarı mesajı döner.</returns>
-        </member>
-        <member name="M:StudentApi.Controllers.StudentsController.SearchStudents(System.String,System.String,System.String)">
-            <summary>
-            Öğrencileri Ad, Soyad veya Email’e göre filtreleyerek listeler.
-            Parametreler opsiyoneldir, herhangi biri veya birkaçı ile arama yapılabilir.
-            </summary>
-            <param name="firstName">Öğrencinin adı (opsiyonel)</param>
-            <param name="lastName">Öğrencinin soyadı (opsiyonel)</param>
-            <param name="email">Öğrencinin email adresi (opsiyonel)</param>
-            <returns>Filtrelenmiş öğrenci listesi (DTO olarak)</returns>
-        </member>
         <member name="T:StudentApi.Migrations.InitialCreate">
             <inheritdoc />
         </member>
