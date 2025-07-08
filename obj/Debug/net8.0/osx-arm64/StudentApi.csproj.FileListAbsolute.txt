@@ -192,3 +192,7 @@
 /Users/edahazar/StudentApi/obj/Debug/net8.0/osx-arm64/StudentApi.pdb
 /Users/edahazar/StudentApi/obj/Debug/net8.0/osx-arm64/StudentApi.genruntimeconfig.cache
 /Users/edahazar/StudentApi/obj/Debug/net8.0/osx-arm64/ref/StudentApi.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.ObjectPool.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.WebEncoders.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Security.Cryptography.Pkcs.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Security.Cryptography.Xml.dll

@@ -28,5 +28,17 @@
         <member name="M:StudentApi.Migrations.RemoveDepartmentRelation.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:StudentApi.Migrations.AddPasswordHashToStudent">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddPasswordHashToStudent.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddPasswordHashToStudent.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddPasswordHashToStudent.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

@@ -4,11 +4,13 @@ using AutoMapper;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.Logging;  // ILogger için
+using Microsoft.AspNetCore.Authorization;  // Authorize için ekledik
 
 namespace StudentApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]  // Burayı ekledik, tüm metotlar için giriş zorunlu oldu
     public class StudentsController : ControllerBase
     {
         private readonly AppDbContext _context;
