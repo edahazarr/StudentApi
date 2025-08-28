@@ -1,69 +1,83 @@
 using Microsoft.EntityFrameworkCore;
 using StudentApi.Models1;
-using FluentValidation.AspNetCore;
+using FluentValidation;                    // <-- validators kaydı için
+using FluentValidation.AspNetCore;        // <-- auto-validation için
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
-// JWT ayarlarını appsettings'den al
+
+// JWT ayarlarını oku ve null koruması yap
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+var issuer     = jwtSettings["Issuer"]     ?? throw new InvalidOperationException("JwtSettings:Issuer missing");
+var audience   = jwtSettings["Audience"]   ?? throw new InvalidOperationException("JwtSettings:Audience missing");
+var secretKey  = jwtSettings["SecretKey"]  ?? throw new InvalidOperationException("JwtSettings:SecretKey missing");
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
+// Auth
+builder.Services
+    .AddAuthentication(options =>
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme    = JwtBearerDefaults.AuthenticationScheme;
+    })
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer           = true,
+            ValidateAudience         = true,
+            ValidateLifetime         = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer              = issuer,
+            ValidAudience            = audience,
+            IssuerSigningKey         = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+        };
+    });
 
-        ValidIssuer = jwtSettings["Issuer"],
-        ValidAudience = jwtSettings["Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]))
-    };
-});
-
-// Serilog konfigürasyonu
+// Serilog
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
     .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
-    // .WriteTo.SQLite("Data Source=student.db", tableName: "Logs")
     .CreateLogger();
+builder.Host.UseSerilog();
 
-builder.Host.UseSerilog(); // Serilog’u host’a bağla
+// 🔧 FluentValidation: IServiceCollection üzerinde çağır
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
 
-// Add services to the container.
+// (Opsiyonel ama önerilir) Validator’ları otomatik tara
+// builder.Services.AddValidatorsFromAssemblyContaining<AnyValidatorInYourProject>();
+
+// Controllers + JSON
 builder.Services.AddControllers()
-    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<StudentValidator>());
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-    c.IncludeXmlComments(xmlPath);
+    if (File.Exists(xmlPath))
+        c.IncludeXmlComments(xmlPath);
 
-    // 🔐 JWT için Swagger yapılandırması
     c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
     {
-        Description = @"JWT Authorization header using the Bearer scheme. \r\n\r\n 
-                        Enter 'Bearer' [space] and then your token in the text input below.
-                        \r\n\r\nExample: 'Bearer 12345abcdef'",
-        Name = "Authorization",
-        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-        Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
+        Description = @"JWT Authorization header using the Bearer scheme.
+Enter 'Bearer' [space] and then your token. Example: 'Bearer 12345abcdef'",
+        Name   = "Authorization",
+        In     = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Type   = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
         Scheme = "Bearer"
     });
 
-    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement()
+    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
     {
         {
             new Microsoft.OpenApi.Models.OpenApiSecurityScheme
@@ -71,11 +85,11 @@ builder.Services.AddSwaggerGen(c =>
                 Reference = new Microsoft.OpenApi.Models.OpenApiReference
                 {
                     Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
-                    Id = "Bearer"
+                    Id   = "Bearer"
                 },
                 Scheme = "oauth2",
-                Name = "Bearer",
-                In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+                Name   = "Bearer",
+                In     = Microsoft.OpenApi.Models.ParameterLocation.Header
             },
             new List<string>()
         }
@@ -84,11 +98,11 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=student.db"));
+
 builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -96,32 +110,29 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthentication(); // <-- JWT Authentication middleware ekledik
-app.UseAuthorization();  // <-- Authorization middleware ekledik
+app.UseAuthentication();
+app.UseAuthorization();
 
 var summaries = new[]
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    "Freezing","Bracing","Chilly","Cool","Mild","Warm","Balmy","Hot","Sweltering","Scorching"
 };
 
 app.MapGet("/weatherforecast", () =>
 {
     var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
+        new WeatherForecast(
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             Random.Shared.Next(-20, 55),
             summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
+        )
+    ).ToArray();
     return forecast;
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
 app.MapControllers();
-
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

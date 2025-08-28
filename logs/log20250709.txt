@@ -895,3 +895,52 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2025-07-09 15:26:21.916 +03:00 [DBG] Connection id "0HNDURK1B4L0M" disconnecting.
 2025-07-09 15:26:21.917 +03:00 [DBG] Connection id "0HNDURK1B4L0M" stopped.
 2025-07-09 15:26:21.918 +03:00 [DBG] Connection id "0HNDURK1B4L0M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-09 21:32:30.720 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-07-09 21:32:30.759 +03:00 [DBG] Hosting starting
+2025-07-09 21:32:30.765 +03:00 [INF] User profile is available. Using '/Users/edahazar/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-09 21:32:30.768 +03:00 [DBG] Reading data from file '/Users/edahazar/.aspnet/DataProtection-Keys/key-7c3a231d-eb49-446c-83aa-3fe8faaf3e2e.xml'.
+2025-07-09 21:32:30.771 +03:00 [DBG] Found key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e}.
+2025-07-09 21:32:30.774 +03:00 [DBG] Considering key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} with expiration date 2025-10-07 11:25:50Z as default key.
+2025-07-09 21:32:30.775 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-09 21:32:30.777 +03:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-07-09 21:32:30.777 +03:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-07-09 21:32:30.778 +03:00 [DBG] Using key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} as the default key.
+2025-07-09 21:32:30.779 +03:00 [DBG] Key ring with default key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} was loaded during application startup.
+2025-07-09 21:32:30.828 +03:00 [INF] Now listening on: http://localhost:5194
+2025-07-09 21:32:30.828 +03:00 [DBG] Loaded hosting startup assembly StudentApi
+2025-07-09 21:32:30.829 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-09 21:32:30.829 +03:00 [INF] Hosting environment: Development
+2025-07-09 21:32:30.829 +03:00 [INF] Content root path: /Users/edahazar/StudentApi
+2025-07-09 21:32:30.829 +03:00 [DBG] Hosting started
+2025-07-09 21:32:34.495 +03:00 [DBG] Connection id "0HNDV2RSGN0ED" accepted.
+2025-07-09 21:32:34.499 +03:00 [DBG] Connection id "0HNDV2RSGN0ED" started.
+2025-07-09 21:32:34.518 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2025-07-09 21:32:34.521 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-07-09 21:32:34.529 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-07-09 21:32:34.529 +03:00 [DBG] Request did not match any endpoints
+2025-07-09 21:32:34.569 +03:00 [DBG] Connection id "0HNDV2RSGN0ED" completed keep alive response.
+2025-07-09 21:32:34.569 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 200 null text/html;charset=utf-8 51.9785ms
+2025-07-09 21:32:34.668 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - null null
+2025-07-09 21:32:34.669 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-07-09 21:32:34.669 +03:00 [DBG] Request did not match any endpoints
+2025-07-09 21:32:34.670 +03:00 [DBG] Connection id "0HNDV2RSGN0EE" accepted.
+2025-07-09 21:32:34.670 +03:00 [DBG] Connection id "0HNDV2RSGN0EE" started.
+2025-07-09 21:32:34.670 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2025-07-09 21:32:34.670 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-07-09 21:32:34.670 +03:00 [DBG] Request did not match any endpoints
+2025-07-09 21:32:34.671 +03:00 [DBG] Connection id "0HNDV2RSGN0EE" completed keep alive response.
+2025-07-09 21:32:34.671 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 200 null text/html;charset=utf-8 1.1843ms
+2025-07-09 21:32:34.673 +03:00 [DBG] Connection id "0HNDV2RSGN0ED" received FIN.
+2025-07-09 21:32:34.675 +03:00 [DBG] Connection id "0HNDV2RSGN0ED" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-09 21:32:34.678 +03:00 [DBG] Connection id "0HNDV2RSGN0ED" disconnecting.
+2025-07-09 21:32:34.699 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - null null
+2025-07-09 21:32:34.700 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-07-09 21:32:34.700 +03:00 [DBG] Request did not match any endpoints
+2025-07-09 21:32:34.728 +03:00 [DBG] Connection id "0HNDV2RSGN0EE" completed keep alive response.
+2025-07-09 21:32:34.728 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 60.0128ms
+2025-07-09 21:32:34.728 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.2531ms
+2025-07-09 21:32:34.729 +03:00 [DBG] Connection id "0HNDV2RSGN0ED" stopped.
+2025-07-09 21:32:53.873 +03:00 [DBG] Connection id "0HNDV2RSGN0EE" received FIN.
+2025-07-09 21:32:53.875 +03:00 [DBG] Connection id "0HNDV2RSGN0EE" disconnecting.
+2025-07-09 21:32:53.876 +03:00 [DBG] Connection id "0HNDV2RSGN0EE" stopped.
+2025-07-09 21:32:53.880 +03:00 [DBG] Connection id "0HNDV2RSGN0EE" sending FIN because: "The Socket transport's send loop completed gracefully."

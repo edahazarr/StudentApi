@@ -3,28 +3,29 @@ using StudentApi.Models1;
 using AutoMapper;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Extensions.Logging;  // ILogger için
+using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;  // Authorize için ekledik
 
 namespace StudentApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]  
+    [Authorize]  // Genel olarak yetkilendirme zorunlu
     public class StudentsController : ControllerBase
     {
         private readonly AppDbContext _context;
         private readonly IMapper _mapper;
-        private readonly ILogger<StudentsController> _logger; // ILogger eklendi
+        private readonly ILogger<StudentsController> _logger;
 
         public StudentsController(AppDbContext context, IMapper mapper, ILogger<StudentsController> logger)
         {
             _context = context;
             _mapper = mapper;
-            _logger = logger;  // DI ile alındı
+            _logger = logger;
         }
 
         [HttpGet]
+        [Authorize(Roles = "User,Admin")]  // User ve Admin görebilir
         public ActionResult<IEnumerable<StudentDto>> GetStudents()
         {
             var students = _context.Students.ToList();
@@ -36,6 +37,7 @@ namespace StudentApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]  // Sadece Admin yapabilir
         public ActionResult<Student> CreateStudent(Student student)
         {
             _context.Students.Add(student);
@@ -47,6 +49,7 @@ namespace StudentApi.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]  // Sadece Admin yapabilir
         public IActionResult UpdateStudent(int id, Student updatedStudent)
         {
             var existingStudent = _context.Students.FirstOrDefault(s => s.Id == id);
@@ -70,6 +73,7 @@ namespace StudentApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]  // Sadece Admin yapabilir
         public IActionResult DeleteStudent(int id)
         {
             var student = _context.Students.FirstOrDefault(s => s.Id == id);
@@ -89,6 +93,7 @@ namespace StudentApi.Controllers
         }
 
         [HttpGet("search")]
+        [Authorize(Roles = "User,Admin")]  // User ve Admin görebilir
         public ActionResult<IEnumerable<StudentDto>> SearchStudents(string? firstName, string? lastName, string? email)
         {
             var query = _context.Students.AsQueryable();

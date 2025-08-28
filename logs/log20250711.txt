@@ -1,0 +1,958 @@
+2025-07-11 15:00:59.878 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-07-11 15:00:59.917 +03:00 [DBG] Hosting starting
+2025-07-11 15:00:59.921 +03:00 [INF] User profile is available. Using '/Users/edahazar/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-11 15:00:59.925 +03:00 [DBG] Reading data from file '/Users/edahazar/.aspnet/DataProtection-Keys/key-7c3a231d-eb49-446c-83aa-3fe8faaf3e2e.xml'.
+2025-07-11 15:00:59.928 +03:00 [DBG] Found key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e}.
+2025-07-11 15:00:59.931 +03:00 [DBG] Considering key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} with expiration date 2025-10-07 11:25:50Z as default key.
+2025-07-11 15:00:59.932 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-11 15:00:59.934 +03:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-07-11 15:00:59.934 +03:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-07-11 15:00:59.935 +03:00 [DBG] Using key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} as the default key.
+2025-07-11 15:00:59.935 +03:00 [DBG] Key ring with default key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} was loaded during application startup.
+2025-07-11 15:00:59.988 +03:00 [INF] Now listening on: http://localhost:5194
+2025-07-11 15:00:59.988 +03:00 [DBG] Loaded hosting startup assembly StudentApi
+2025-07-11 15:00:59.988 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-11 15:00:59.988 +03:00 [INF] Hosting environment: Development
+2025-07-11 15:00:59.988 +03:00 [INF] Content root path: /Users/edahazar/StudentApi
+2025-07-11 15:00:59.988 +03:00 [DBG] Hosting started
+2025-07-11 15:01:14.058 +03:00 [DBG] Connection id "0HNE0EAH71G6N" accepted.
+2025-07-11 15:01:14.059 +03:00 [DBG] Connection id "0HNE0EAH71G6N" started.
+2025-07-11 15:01:14.079 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2025-07-11 15:01:14.081 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-07-11 15:01:14.091 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-07-11 15:01:14.092 +03:00 [DBG] Request did not match any endpoints
+2025-07-11 15:01:14.135 +03:00 [DBG] Connection id "0HNE0EAH71G6N" completed keep alive response.
+2025-07-11 15:01:14.136 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 200 null text/html;charset=utf-8 57.3954ms
+2025-07-11 15:01:14.204 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - null null
+2025-07-11 15:01:14.205 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-07-11 15:01:14.205 +03:00 [DBG] Request did not match any endpoints
+2025-07-11 15:01:14.256 +03:00 [DBG] Connection id "0HNE0EAH71G6N" completed keep alive response.
+2025-07-11 15:01:14.256 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.4776ms
+2025-07-11 15:03:05.202 +03:00 [DBG] Connection id "0HNE0EAH71G6N" received FIN.
+2025-07-11 15:03:05.211 +03:00 [DBG] Connection id "0HNE0EAH71G6N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-11 15:03:05.217 +03:00 [DBG] Connection id "0HNE0EAH71G6N" disconnecting.
+2025-07-11 15:03:05.218 +03:00 [DBG] Connection id "0HNE0EAH71G6N" stopped.
+2025-07-11 15:07:23.942 +03:00 [DBG] Connection id "0HNE0EAH71G6O" accepted.
+2025-07-11 15:07:23.944 +03:00 [DBG] Connection id "0HNE0EAH71G6O" started.
+2025-07-11 15:07:23.948 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/register - application/json 126
+2025-07-11 15:07:23.954 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-07-11 15:07:23.957 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-07-11 15:07:23.958 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:07:23.962 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:07:23.963 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-07-11 15:07:23.994 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:07:23.995 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:07:24.008 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentApi.Models1.RegisterRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:07:24.009 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:07:24.009 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:07:24.009 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:07:24.009 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:07:24.009 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:07:24.009 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:07:24.066 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-07-11 15:07:24.076 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:07:24.077 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:07:24.078 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' using the name '' in request data ...
+2025-07-11 15:07:24.078 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:07:24.081 +03:00 [DBG] Connection id "0HNE0EAH71G6O", Request id "0HNE0EAH71G6O:00000001": started reading request body.
+2025-07-11 15:07:24.081 +03:00 [DBG] Connection id "0HNE0EAH71G6O", Request id "0HNE0EAH71G6O:00000001": done reading request body.
+2025-07-11 15:07:24.087 +03:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to StudentApi.Models1.Role. Path: $.role | LineNumber: 5 | BytePositionInLine: 17.
+2025-07-11 15:07:24.088 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:07:24.088 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:07:24.088 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:07:24.093 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:07:24.093 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 15:07:24.094 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 15:07:24.094 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 15:07:24.094 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 15:07:24.095 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 15:07:24.095 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 15:07:24.095 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 15:07:24.107 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Register (StudentApi) in 97.2099ms
+2025-07-11 15:07:24.107 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:07:24.107 +03:00 [DBG] Connection id "0HNE0EAH71G6O" completed keep alive response.
+2025-07-11 15:07:24.108 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/register - 400 null application/problem+json; charset=utf-8 160.0634ms
+2025-07-11 15:07:39.628 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/login - application/json 62
+2025-07-11 15:07:39.631 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-07-11 15:07:39.631 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-07-11 15:07:39.631 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:07:39.631 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:07:39.632 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:07:39.632 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:07:39.636 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentApi.Models1.LoginRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:07:39.636 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:07:39.636 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:07:39.636 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:07:39.636 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:07:39.637 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:07:39.637 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:07:39.644 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:07:39.644 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest' ...
+2025-07-11 15:07:39.645 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest' using the name '' in request data ...
+2025-07-11 15:07:39.645 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:07:39.646 +03:00 [DBG] Connection id "0HNE0EAH71G6O", Request id "0HNE0EAH71G6O:00000002": started reading request body.
+2025-07-11 15:07:39.646 +03:00 [DBG] Connection id "0HNE0EAH71G6O", Request id "0HNE0EAH71G6O:00000002": done reading request body.
+2025-07-11 15:07:39.648 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'StudentApi.Models1.LoginRequest'
+2025-07-11 15:07:39.648 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:07:39.648 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:07:39.648 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.LoginRequest' ...
+2025-07-11 15:07:39.654 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:07:39.847 +03:00 [DBG] Entity Framework Core 9.0.6 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.6' with options: None
+2025-07-11 15:07:39.859 +03:00 [DBG] Compiling query expression: 
+'DbSet<Student>()
+    .SingleOrDefault(s => s.Email == __request_Email_0)'
+2025-07-11 15:07:39.961 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Student>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.BirthDate (DateTime) Required, 1], [Property: Student.Email (string) Required, 2], [Property: Student.FirstName (string) Required, 3], [Property: Student.LastName (string) Required, 4], [Property: Student.PasswordHash (string) Required, 5], [Property: Student.Role (Role) Required, 6] }
+        SELECT TOP(2) s.Id, s.BirthDate, s.Email, s.FirstName, s.LastName, s.PasswordHash, s.Role
+        FROM Students AS s
+        WHERE s.Email == @__request_Email_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.BirthDate (DateTime) Required, 1], [Property: Student.Email (string) Required, 2], [Property: Student.FirstName (string) Required, 3], [Property: Student.LastName (string) Required, 4], [Property: Student.PasswordHash (string) Required, 5], [Property: Student.Role (Role) Required, 6] }
+        SELECT TOP(2) s.Id, s.BirthDate, s.Email, s.FirstName, s.LastName, s.PasswordHash, s.Role
+        FROM Students AS s
+        WHERE s.Email == @__request_Email_0, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Student entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Student instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Student);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Student.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("StudentApi.Models1.Student").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Student)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")]: 
+                        {
+                            return 
+                            {
+                                Student instance;
+                                instance = new Student();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<BirthDate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Email>k__BackingField = dataReader.GetString(2);
+                                instance.<FirstName>k__BackingField = dataReader.GetString(3);
+                                instance.<LastName>k__BackingField = dataReader.GetString(4);
+                                instance.<PasswordHash>k__BackingField = dataReader.GetString(5);
+                                instance.<Role>k__BackingField = Invoke(((EnumToNumberConverter<Role, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Student.Role (Role) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student").FindProperty("Role")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(6));
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Student)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: StudentApi.Models1.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2025-07-11 15:07:39.975 +03:00 [DBG] Creating DbConnection.
+2025-07-11 15:07:39.981 +03:00 [DBG] Created DbConnection. (5ms).
+2025-07-11 15:07:39.982 +03:00 [DBG] Opening connection to database 'main' on server 'student.db'.
+2025-07-11 15:07:39.989 +03:00 [DBG] Opened connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:07:39.991 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-07-11 15:07:39.993 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-07-11 15:07:39.994 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2025-07-11 15:07:39.997 +03:00 [DBG] Executing DbCommand [Parameters=[@__request_Email_0='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName", "s"."PasswordHash", "s"."Role"
+FROM "Students" AS "s"
+WHERE "s"."Email" = @__request_Email_0
+LIMIT 2
+2025-07-11 15:07:40.003 +03:00 [ERR] Failed executing DbCommand (7ms) [Parameters=[@__request_Email_0='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName", "s"."PasswordHash", "s"."Role"
+FROM "Students" AS "s"
+WHERE "s"."Email" = @__request_Email_0
+LIMIT 2
+2025-07-11 15:07:40.004 +03:00 [DBG] Closing connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:07:40.006 +03:00 [DBG] Closed connection to database 'main' on server 'student.db' (1ms).
+2025-07-11 15:07:40.013 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'StudentApi.Models1.AppDbContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: s.Role'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: s.Role'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-07-11 15:07:40.013 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Login (StudentApi) in 376.6327ms
+2025-07-11 15:07:40.014 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:07:40.014 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such column: s.Role'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements()+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Storage.NonRetryingExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method17(Closure, QueryContext)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteCore[TResult](Expression query, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at StudentApi.Controllers.AuthController.Login(LoginRequest request) in /Users/edahazar/StudentApi/Controllers/AuthController.cs:line 55
+   at lambda_method7(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-07-11 15:07:40.022 +03:00 [DBG] Connection id "0HNE0EAH71G6O" completed keep alive response.
+2025-07-11 15:07:40.022 +03:00 [DBG] 'AppDbContext' disposed.
+2025-07-11 15:07:40.024 +03:00 [DBG] Disposing connection to database 'main' on server 'student.db'.
+2025-07-11 15:07:40.024 +03:00 [DBG] Disposed connection to database 'main' on server 'student.db' (0ms).
+2025-07-11 15:07:40.024 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/login - 500 null text/plain; charset=utf-8 396.3859ms
+2025-07-11 15:09:50.525 +03:00 [DBG] Connection id "0HNE0EAH71G6O" disconnecting.
+2025-07-11 15:09:50.528 +03:00 [DBG] Connection id "0HNE0EAH71G6O" stopped.
+2025-07-11 15:09:50.529 +03:00 [DBG] Connection id "0HNE0EAH71G6O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-11 15:47:00.124 +03:00 [INF] Application is shutting down...
+2025-07-11 15:47:00.130 +03:00 [DBG] Hosting stopping
+2025-07-11 15:47:00.149 +03:00 [DBG] Hosting stopped
+2025-07-11 15:47:04.636 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-07-11 15:47:04.805 +03:00 [DBG] Entity Framework Core 9.0.6 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.6' with options: None
+2025-07-11 15:47:05.022 +03:00 [DBG] 'AppDbContext' disposed.
+2025-07-11 15:47:08.055 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-07-11 15:47:08.219 +03:00 [DBG] Entity Framework Core 9.0.6 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.6' with options: None
+2025-07-11 15:47:08.257 +03:00 [DBG] Creating DbConnection.
+2025-07-11 15:47:08.262 +03:00 [DBG] Created DbConnection. (3ms).
+2025-07-11 15:47:08.264 +03:00 [DBG] Migrating using database 'main' on server 'student.db'.
+2025-07-11 15:47:08.265 +03:00 [DBG] Creating DbConnection.
+2025-07-11 15:47:08.266 +03:00 [DBG] Created DbConnection. (1ms).
+2025-07-11 15:47:08.267 +03:00 [DBG] Opening connection to database 'main' on server 'student.db'.
+2025-07-11 15:47:08.272 +03:00 [DBG] Opened connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:47:08.273 +03:00 [DBG] Disposing connection to database 'main' on server 'student.db'.
+2025-07-11 15:47:08.274 +03:00 [DBG] Disposed connection to database 'main' on server 'student.db' (0ms).
+2025-07-11 15:47:08.275 +03:00 [DBG] Opening connection to database 'main' on server 'student.db'.
+2025-07-11 15:47:08.275 +03:00 [DBG] Opened connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:47:08.276 +03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-07-11 15:47:08.279 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-07-11 15:47:08.281 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (1ms).
+2025-07-11 15:47:08.281 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (3ms).
+2025-07-11 15:47:08.283 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsLock' AND "type" = 'table';
+2025-07-11 15:47:08.291 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsLock' AND "type" = 'table';
+2025-07-11 15:47:08.292 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-07-11 15:47:08.292 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-07-11 15:47:08.292 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-07-11 15:47:08.292 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT OR IGNORE INTO "__EFMigrationsLock"("Id", "Timestamp") VALUES(1, '2025-07-11 12:47:08.292035+00:00');
+SELECT changes();
+2025-07-11 15:47:08.292 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT OR IGNORE INTO "__EFMigrationsLock"("Id", "Timestamp") VALUES(1, '2025-07-11 12:47:08.292035+00:00');
+SELECT changes();
+2025-07-11 15:47:08.316 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-07-11 15:47:08.317 +03:00 [DBG] Began transaction with isolation level 'Serializable'.
+2025-07-11 15:47:08.318 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-07-11 15:47:08.318 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-07-11 15:47:08.318 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-07-11 15:47:08.318 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2025-07-11 15:47:08.318 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2025-07-11 15:47:08.319 +03:00 [DBG] Committing transaction.
+2025-07-11 15:47:08.319 +03:00 [DBG] Committed transaction.
+2025-07-11 15:47:08.319 +03:00 [DBG] Disposing transaction.
+2025-07-11 15:47:08.320 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2025-07-11 15:47:08.320 +03:00 [DBG] Began transaction with isolation level 'Serializable'.
+2025-07-11 15:47:08.320 +03:00 [DBG] Creating DbConnection.
+2025-07-11 15:47:08.320 +03:00 [DBG] Created DbConnection. (0ms).
+2025-07-11 15:47:08.320 +03:00 [DBG] Opening connection to database 'main' on server 'student.db'.
+2025-07-11 15:47:08.321 +03:00 [DBG] Opened connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:47:08.321 +03:00 [DBG] Disposing connection to database 'main' on server 'student.db'.
+2025-07-11 15:47:08.321 +03:00 [DBG] Disposed connection to database 'main' on server 'student.db' (0ms).
+2025-07-11 15:47:08.321 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-07-11 15:47:08.321 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-07-11 15:47:08.321 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-07-11 15:47:08.321 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2025-07-11 15:47:08.321 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2025-07-11 15:47:08.322 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-07-11 15:47:08.322 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-07-11 15:47:08.322 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-07-11 15:47:08.322 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-07-11 15:47:08.322 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-07-11 15:47:08.323 +03:00 [DBG] Closing data reader to 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:47:08.323 +03:00 [DBG] A data reader for 'main' on server '/Users/edahazar/StudentApi/student.db' is being disposed after spending 0ms reading results.
+2025-07-11 15:47:08.325 +03:00 [INF] Applying migration '20250711124705_AddRoleToStudent'.
+2025-07-11 15:47:08.327 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-07-11 15:47:08.327 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-07-11 15:47:08.327 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-07-11 15:47:08.327 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Students" ADD "Role" INTEGER NOT NULL DEFAULT 0;
+2025-07-11 15:47:08.327 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Students" ADD "Role" INTEGER NOT NULL DEFAULT 0;
+2025-07-11 15:47:08.327 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2025-07-11 15:47:08.327 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2025-07-11 15:47:08.327 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2025-07-11 15:47:08.327 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250711124705_AddRoleToStudent', '9.0.6');
+2025-07-11 15:47:08.327 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250711124705_AddRoleToStudent', '9.0.6');
+2025-07-11 15:47:08.327 +03:00 [DBG] Committing transaction.
+2025-07-11 15:47:08.328 +03:00 [DBG] Committed transaction.
+2025-07-11 15:47:08.328 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2025-07-11 15:47:08.328 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (0ms).
+2025-07-11 15:47:08.328 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (0ms).
+2025-07-11 15:47:08.328 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "__EFMigrationsLock";
+2025-07-11 15:47:08.328 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "__EFMigrationsLock";
+2025-07-11 15:47:08.328 +03:00 [DBG] Disposing transaction.
+2025-07-11 15:47:08.329 +03:00 [DBG] Closing connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:47:08.330 +03:00 [DBG] Closed connection to database 'main' on server 'student.db' (1ms).
+2025-07-11 15:47:08.331 +03:00 [DBG] 'AppDbContext' disposed.
+2025-07-11 15:47:08.331 +03:00 [DBG] Disposing connection to database 'main' on server 'student.db'.
+2025-07-11 15:47:08.331 +03:00 [DBG] Disposed connection to database 'main' on server 'student.db' (0ms).
+2025-07-11 15:47:28.273 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-07-11 15:47:28.311 +03:00 [DBG] Hosting starting
+2025-07-11 15:47:28.316 +03:00 [INF] User profile is available. Using '/Users/edahazar/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-07-11 15:47:28.320 +03:00 [DBG] Reading data from file '/Users/edahazar/.aspnet/DataProtection-Keys/key-7c3a231d-eb49-446c-83aa-3fe8faaf3e2e.xml'.
+2025-07-11 15:47:28.323 +03:00 [DBG] Found key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e}.
+2025-07-11 15:47:28.325 +03:00 [DBG] Considering key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} with expiration date 2025-10-07 11:25:50Z as default key.
+2025-07-11 15:47:28.326 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-07-11 15:47:28.328 +03:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2025-07-11 15:47:28.328 +03:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2025-07-11 15:47:28.329 +03:00 [DBG] Using key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} as the default key.
+2025-07-11 15:47:28.330 +03:00 [DBG] Key ring with default key {7c3a231d-eb49-446c-83aa-3fe8faaf3e2e} was loaded during application startup.
+2025-07-11 15:47:28.380 +03:00 [INF] Now listening on: http://localhost:5194
+2025-07-11 15:47:28.380 +03:00 [DBG] Loaded hosting startup assembly StudentApi
+2025-07-11 15:47:28.381 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-11 15:47:28.381 +03:00 [INF] Hosting environment: Development
+2025-07-11 15:47:28.381 +03:00 [INF] Content root path: /Users/edahazar/StudentApi
+2025-07-11 15:47:28.381 +03:00 [DBG] Hosting started
+2025-07-11 15:47:31.345 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" accepted.
+2025-07-11 15:47:31.346 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" started.
+2025-07-11 15:47:31.371 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2025-07-11 15:47:31.373 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-07-11 15:47:31.382 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-07-11 15:47:31.383 +03:00 [DBG] Request did not match any endpoints
+2025-07-11 15:47:31.422 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:47:31.423 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 200 null text/html;charset=utf-8 52.6833ms
+2025-07-11 15:47:31.499 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - null null
+2025-07-11 15:47:31.500 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-07-11 15:47:31.500 +03:00 [DBG] Request did not match any endpoints
+2025-07-11 15:47:31.551 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:47:31.552 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.5174ms
+2025-07-11 15:48:01.147 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/register - application/json 127
+2025-07-11 15:48:01.152 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-07-11 15:48:01.157 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-07-11 15:48:01.158 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:01.160 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:48:01.161 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-07-11 15:48:01.185 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:48:01.186 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:01.198 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentApi.Models1.RegisterRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:48:01.200 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:48:01.200 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:48:01.200 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:48:01.201 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:48:01.201 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:48:01.201 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:48:01.248 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-07-11 15:48:01.256 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:48:01.257 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:48:01.258 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' using the name '' in request data ...
+2025-07-11 15:48:01.258 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:48:01.261 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000003": started reading request body.
+2025-07-11 15:48:01.261 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000003": done reading request body.
+2025-07-11 15:48:01.267 +03:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to StudentApi.Models1.Role. Path: $.role | LineNumber: 5 | BytePositionInLine: 17.
+2025-07-11 15:48:01.267 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:01.267 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:01.267 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:48:01.269 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:01.270 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 15:48:01.270 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 15:48:01.271 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 15:48:01.271 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 15:48:01.271 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 15:48:01.271 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 15:48:01.271 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 15:48:01.282 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Register (StudentApi) in 80.3375ms
+2025-07-11 15:48:01.282 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:01.282 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:48:01.283 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/register - 400 null application/problem+json; charset=utf-8 135.646ms
+2025-07-11 15:48:13.769 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/register - application/json 128
+2025-07-11 15:48:13.772 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-07-11 15:48:13.772 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-07-11 15:48:13.772 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:13.772 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:48:13.773 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:48:13.774 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:13.774 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentApi.Models1.RegisterRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:48:13.774 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:48:13.774 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:48:13.775 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:48:13.775 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:48:13.776 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:48:13.776 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:48:13.785 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:48:13.786 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:48:13.786 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' using the name '' in request data ...
+2025-07-11 15:48:13.786 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:48:13.787 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000004": started reading request body.
+2025-07-11 15:48:13.787 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000004": done reading request body.
+2025-07-11 15:48:13.787 +03:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to StudentApi.Models1.Role. Path: $.role | LineNumber: 5 | BytePositionInLine: 17.
+2025-07-11 15:48:13.787 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:13.788 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:13.788 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:48:13.788 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:13.788 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 15:48:13.788 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 15:48:13.788 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 15:48:13.789 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 15:48:13.789 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 15:48:13.789 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 15:48:13.789 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 15:48:13.789 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Register (StudentApi) in 13.4645ms
+2025-07-11 15:48:13.789 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:13.789 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:48:13.790 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/register - 400 null application/problem+json; charset=utf-8 20.6599ms
+2025-07-11 15:48:23.777 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/register - application/json 129
+2025-07-11 15:48:23.777 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-07-11 15:48:23.777 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-07-11 15:48:23.777 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:23.778 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:48:23.781 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:48:23.781 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:23.782 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentApi.Models1.RegisterRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:48:23.782 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:48:23.782 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:48:23.782 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:48:23.782 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:48:23.782 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:48:23.783 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:48:23.786 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:48:23.786 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:48:23.787 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' using the name '' in request data ...
+2025-07-11 15:48:23.787 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:48:23.787 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000005": started reading request body.
+2025-07-11 15:48:23.787 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000005": done reading request body.
+2025-07-11 15:48:23.787 +03:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to StudentApi.Models1.Role. Path: $.role | LineNumber: 5 | BytePositionInLine: 17.
+2025-07-11 15:48:23.788 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:23.788 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:23.788 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:48:23.788 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:48:23.788 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 15:48:23.788 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 15:48:23.788 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 15:48:23.788 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 15:48:23.788 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 15:48:23.789 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 15:48:23.789 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 15:48:23.789 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Register (StudentApi) in 6.4596ms
+2025-07-11 15:48:23.789 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:48:23.789 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:48:23.789 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/register - 400 null application/problem+json; charset=utf-8 12.519ms
+2025-07-11 15:48:40.960 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/login - application/json 64
+2025-07-11 15:48:40.962 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-07-11 15:48:40.962 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-07-11 15:48:40.962 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:48:40.962 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:48:40.964 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:48:40.965 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:48:40.968 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentApi.Models1.LoginRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:48:40.968 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:48:40.968 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:48:40.968 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:48:40.968 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:48:40.968 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:48:40.969 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:48:40.969 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:48:40.969 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest' ...
+2025-07-11 15:48:40.970 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest' using the name '' in request data ...
+2025-07-11 15:48:40.970 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:48:40.971 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000006": started reading request body.
+2025-07-11 15:48:40.971 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000006": done reading request body.
+2025-07-11 15:48:40.975 +03:00 [DBG] JSON input formatter threw an exception: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 5 | BytePositionInLine: 0.
+2025-07-11 15:48:40.975 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:48:40.975 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:48:40.975 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.LoginRequest' ...
+2025-07-11 15:48:40.976 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:48:40.976 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 15:48:40.976 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 15:48:40.976 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 15:48:40.976 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 15:48:40.976 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 15:48:40.976 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 15:48:40.976 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 15:48:40.977 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Login (StudentApi) in 8.1326ms
+2025-07-11 15:48:40.977 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:48:40.977 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:48:40.977 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/login - 400 null application/problem+json; charset=utf-8 17.0707ms
+2025-07-11 15:49:35.510 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/login - application/json 63
+2025-07-11 15:49:35.512 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-07-11 15:49:35.513 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-07-11 15:49:35.513 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:49:35.514 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:49:35.515 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:49:35.515 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:49:35.516 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentApi.Models1.LoginRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:49:35.516 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:49:35.516 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:49:35.517 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:49:35.517 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:49:35.517 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:49:35.518 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:49:35.520 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:49:35.521 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest' ...
+2025-07-11 15:49:35.521 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest' using the name '' in request data ...
+2025-07-11 15:49:35.521 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:49:35.522 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000007": started reading request body.
+2025-07-11 15:49:35.522 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000007": done reading request body.
+2025-07-11 15:49:35.524 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'StudentApi.Models1.LoginRequest'
+2025-07-11 15:49:35.525 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:49:35.525 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:49:35.525 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.LoginRequest' ...
+2025-07-11 15:49:35.533 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:49:35.702 +03:00 [DBG] Entity Framework Core 9.0.6 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.6' with options: None
+2025-07-11 15:49:35.715 +03:00 [DBG] Compiling query expression: 
+'DbSet<Student>()
+    .SingleOrDefault(s => s.Email == __request_Email_0)'
+2025-07-11 15:49:35.816 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<Student>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.BirthDate (DateTime) Required, 1], [Property: Student.Email (string) Required, 2], [Property: Student.FirstName (string) Required, 3], [Property: Student.LastName (string) Required, 4], [Property: Student.PasswordHash (string) Required, 5], [Property: Student.Role (Role) Required, 6] }
+        SELECT TOP(2) s.Id, s.BirthDate, s.Email, s.FirstName, s.LastName, s.PasswordHash, s.Role
+        FROM Students AS s
+        WHERE s.Email == @__request_Email_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Student.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Student.BirthDate (DateTime) Required, 1], [Property: Student.Email (string) Required, 2], [Property: Student.FirstName (string) Required, 3], [Property: Student.LastName (string) Required, 4], [Property: Student.PasswordHash (string) Required, 5], [Property: Student.Role (Role) Required, 6] }
+        SELECT TOP(2) s.Id, s.BirthDate, s.Email, s.FirstName, s.LastName, s.PasswordHash, s.Role
+        FROM Students AS s
+        WHERE s.Email == @__request_Email_0, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        Student entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            Student instance1;
+            InternalEntityEntry entry1;
+            bool hasNullKey1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(Student);
+            entry1 = queryContext.TryGetEntry(
+                key: [LIFTABLE Constant: Key: Student.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("StudentApi.Models1.Student").FindPrimaryKey()], 
+                keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                throwOnNullKey: True, 
+                hasNullKey: hasNullKey1);
+            !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+            {
+                entityType1 = entry1.EntityType;
+                return instance1 = (Student)entry1.Entity;
+            } : 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")]: 
+                        {
+                            return 
+                            {
+                                Student instance;
+                                instance = new Student();
+                                instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                instance.<BirthDate>k__BackingField = dataReader.GetDateTime(1);
+                                instance.<Email>k__BackingField = dataReader.GetString(2);
+                                instance.<FirstName>k__BackingField = dataReader.GetString(3);
+                                instance.<LastName>k__BackingField = dataReader.GetString(4);
+                                instance.<PasswordHash>k__BackingField = dataReader.GetString(5);
+                                instance.<Role>k__BackingField = Invoke(((EnumToNumberConverter<Role, int>)((IReadOnlyProperty)[LIFTABLE Constant: Property: Student.Role (Role) Required | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student").FindProperty("Role")]).GetTypeMapping().Converter).ConvertFromProviderTyped, dataReader.GetInt32(6));
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: TrackAll, 
+                                    structuralType: [LIFTABLE Constant: EntityType: Student | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType("StudentApi.Models1.Student")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(Student)
+                }
+                ;
+                entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                    entityType: entityType1, 
+                    entity: instance1, 
+                    snapshot: shadowSnapshot1);
+                return instance1;
+            } : default(void);
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: StudentApi.Models1.AppDbContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)
+    .SingleOrDefault()'
+2025-07-11 15:49:35.828 +03:00 [DBG] Creating DbConnection.
+2025-07-11 15:49:35.832 +03:00 [DBG] Created DbConnection. (4ms).
+2025-07-11 15:49:35.833 +03:00 [DBG] Opening connection to database 'main' on server 'student.db'.
+2025-07-11 15:49:35.839 +03:00 [DBG] Opened connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:49:35.840 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-07-11 15:49:35.842 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-07-11 15:49:35.843 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-07-11 15:49:35.845 +03:00 [DBG] Executing DbCommand [Parameters=[@__request_Email_0='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName", "s"."PasswordHash", "s"."Role"
+FROM "Students" AS "s"
+WHERE "s"."Email" = @__request_Email_0
+LIMIT 2
+2025-07-11 15:49:35.852 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__request_Email_0='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName", "s"."PasswordHash", "s"."Role"
+FROM "Students" AS "s"
+WHERE "s"."Email" = @__request_Email_0
+LIMIT 2
+2025-07-11 15:49:35.853 +03:00 [DBG] Closing data reader to 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:49:35.855 +03:00 [DBG] A data reader for 'main' on server '/Users/edahazar/StudentApi/student.db' is being disposed after spending 1ms reading results.
+2025-07-11 15:49:35.855 +03:00 [DBG] Closing connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:49:35.857 +03:00 [DBG] Closed connection to database 'main' on server 'student.db' (1ms).
+2025-07-11 15:49:35.857 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 15:49:35.857 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 15:49:35.857 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-07-11 15:49:35.857 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-07-11 15:49:35.857 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-07-11 15:49:35.857 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-07-11 15:49:35.857 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Login (StudentApi) in 339.5314ms
+2025-07-11 15:49:35.857 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:49:35.857 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:49:35.857 +03:00 [DBG] 'AppDbContext' disposed.
+2025-07-11 15:49:35.859 +03:00 [DBG] Disposing connection to database 'main' on server 'student.db'.
+2025-07-11 15:49:35.859 +03:00 [DBG] Disposed connection to database 'main' on server 'student.db' (0ms).
+2025-07-11 15:49:35.859 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/login - 401 null text/plain; charset=utf-8 349.2695ms
+2025-07-11 15:50:04.118 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/register - application/json 137
+2025-07-11 15:50:04.119 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-07-11 15:50:04.119 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-07-11 15:50:04.119 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:50:04.119 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:50:04.119 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:50:04.120 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:50:04.120 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentApi.Models1.RegisterRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:50:04.120 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:50:04.120 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:50:04.121 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:50:04.121 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:50:04.121 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:50:04.121 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:50:04.122 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:50:04.122 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:50:04.122 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' using the name '' in request data ...
+2025-07-11 15:50:04.123 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:50:04.124 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000008": started reading request body.
+2025-07-11 15:50:04.124 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000008": done reading request body.
+2025-07-11 15:50:04.128 +03:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to StudentApi.Models1.Role. Path: $.role | LineNumber: 5 | BytePositionInLine: 20.
+2025-07-11 15:50:04.128 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:50:04.128 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:50:04.128 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 15:50:04.129 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 15:50:04.129 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 15:50:04.130 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 15:50:04.130 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 15:50:04.130 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 15:50:04.130 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 15:50:04.130 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 15:50:04.130 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 15:50:04.131 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Register (StudentApi) in 9.7451ms
+2025-07-11 15:50:04.131 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 15:50:04.131 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:50:04.131 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/register - 400 null application/problem+json; charset=utf-8 13.5597ms
+2025-07-11 15:50:12.081 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/login - application/json 66
+2025-07-11 15:50:12.081 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-07-11 15:50:12.082 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-07-11 15:50:12.082 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:50:12.082 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 15:50:12.082 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 15:50:12.082 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:50:12.082 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(StudentApi.Models1.LoginRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 15:50:12.082 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 15:50:12.082 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 15:50:12.082 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 15:50:12.082 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 15:50:12.082 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 15:50:12.083 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:50:12.083 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 15:50:12.083 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest' ...
+2025-07-11 15:50:12.084 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest' using the name '' in request data ...
+2025-07-11 15:50:12.084 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 15:50:12.084 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000009": started reading request body.
+2025-07-11 15:50:12.084 +03:00 [DBG] Connection id "0HNE0F4CTA9JH", Request id "0HNE0F4CTA9JH:00000009": done reading request body.
+2025-07-11 15:50:12.085 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'StudentApi.Models1.LoginRequest'
+2025-07-11 15:50:12.085 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:50:12.085 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:50:12.085 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.LoginRequest' ...
+2025-07-11 15:50:12.085 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.LoginRequest'.
+2025-07-11 15:50:12.098 +03:00 [DBG] Entity Framework Core 9.0.6 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:9.0.6' with options: None
+2025-07-11 15:50:12.102 +03:00 [DBG] Creating DbConnection.
+2025-07-11 15:50:12.102 +03:00 [DBG] Created DbConnection. (0ms).
+2025-07-11 15:50:12.102 +03:00 [DBG] Opening connection to database 'main' on server 'student.db'.
+2025-07-11 15:50:12.102 +03:00 [DBG] Opened connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:50:12.102 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-07-11 15:50:12.102 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-07-11 15:50:12.102 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-07-11 15:50:12.102 +03:00 [DBG] Executing DbCommand [Parameters=[@__request_Email_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName", "s"."PasswordHash", "s"."Role"
+FROM "Students" AS "s"
+WHERE "s"."Email" = @__request_Email_0
+LIMIT 2
+2025-07-11 15:50:12.103 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__request_Email_0='?' (Size = 19)], CommandType='"Text"', CommandTimeout='30']
+SELECT "s"."Id", "s"."BirthDate", "s"."Email", "s"."FirstName", "s"."LastName", "s"."PasswordHash", "s"."Role"
+FROM "Students" AS "s"
+WHERE "s"."Email" = @__request_Email_0
+LIMIT 2
+2025-07-11 15:50:12.103 +03:00 [DBG] Closing data reader to 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:50:12.103 +03:00 [DBG] A data reader for 'main' on server '/Users/edahazar/StudentApi/student.db' is being disposed after spending 0ms reading results.
+2025-07-11 15:50:12.103 +03:00 [DBG] Closing connection to database 'main' on server '/Users/edahazar/StudentApi/student.db'.
+2025-07-11 15:50:12.103 +03:00 [DBG] Closed connection to database 'main' on server 'student.db' (0ms).
+2025-07-11 15:50:12.103 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 15:50:12.104 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 15:50:12.104 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-07-11 15:50:12.104 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-07-11 15:50:12.104 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2025-07-11 15:50:12.104 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-07-11 15:50:12.104 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Login (StudentApi) in 21.6535ms
+2025-07-11 15:50:12.104 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Login (StudentApi)'
+2025-07-11 15:50:12.104 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" completed keep alive response.
+2025-07-11 15:50:12.105 +03:00 [DBG] 'AppDbContext' disposed.
+2025-07-11 15:50:12.105 +03:00 [DBG] Disposing connection to database 'main' on server 'student.db'.
+2025-07-11 15:50:12.105 +03:00 [DBG] Disposed connection to database 'main' on server 'student.db' (0ms).
+2025-07-11 15:50:12.105 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/login - 401 null text/plain; charset=utf-8 23.7243ms
+2025-07-11 15:52:11.145 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" received FIN.
+2025-07-11 15:52:11.150 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-11 15:52:11.158 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" disconnecting.
+2025-07-11 15:52:11.159 +03:00 [DBG] Connection id "0HNE0F4CTA9JH" stopped.
+2025-07-11 16:02:10.753 +03:00 [DBG] Connection id "0HNE0F4CTA9JI" accepted.
+2025-07-11 16:02:10.756 +03:00 [DBG] Connection id "0HNE0F4CTA9JI" started.
+2025-07-11 16:02:10.759 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/register - application/json 124
+2025-07-11 16:02:10.759 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-07-11 16:02:10.760 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-07-11 16:02:10.760 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:02:10.760 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 16:02:10.761 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 16:02:10.761 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:02:10.762 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentApi.Models1.RegisterRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 16:02:10.762 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 16:02:10.762 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 16:02:10.762 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 16:02:10.762 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 16:02:10.762 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 16:02:10.762 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 16:02:10.763 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 16:02:10.763 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 16:02:10.764 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' using the name '' in request data ...
+2025-07-11 16:02:10.764 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 16:02:10.764 +03:00 [DBG] Connection id "0HNE0F4CTA9JI", Request id "0HNE0F4CTA9JI:00000001": started reading request body.
+2025-07-11 16:02:10.764 +03:00 [DBG] Connection id "0HNE0F4CTA9JI", Request id "0HNE0F4CTA9JI:00000001": done reading request body.
+2025-07-11 16:02:10.766 +03:00 [DBG] JSON input formatter threw an exception: 'A' is an invalid start of a value. Path: $.role | LineNumber: 5 | BytePositionInLine: 10.
+2025-07-11 16:02:10.766 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:02:10.766 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:02:10.766 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 16:02:10.768 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:02:10.768 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 16:02:10.768 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 16:02:10.768 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 16:02:10.769 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 16:02:10.769 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 16:02:10.770 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 16:02:10.770 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 16:02:10.771 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Register (StudentApi) in 8.3912ms
+2025-07-11 16:02:10.771 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:02:10.771 +03:00 [DBG] Connection id "0HNE0F4CTA9JI" completed keep alive response.
+2025-07-11 16:02:10.771 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/register - 400 null application/problem+json; charset=utf-8 12.4371ms
+2025-07-11 16:03:34.656 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/register - application/json 126
+2025-07-11 16:03:34.662 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-07-11 16:03:34.662 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-07-11 16:03:34.663 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:03:34.663 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 16:03:34.664 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 16:03:34.664 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:03:34.665 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentApi.Models1.RegisterRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 16:03:34.665 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 16:03:34.665 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 16:03:34.665 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 16:03:34.665 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 16:03:34.665 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 16:03:34.666 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 16:03:34.667 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 16:03:34.668 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 16:03:34.668 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' using the name '' in request data ...
+2025-07-11 16:03:34.668 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 16:03:34.669 +03:00 [DBG] Connection id "0HNE0F4CTA9JI", Request id "0HNE0F4CTA9JI:00000002": started reading request body.
+2025-07-11 16:03:34.670 +03:00 [DBG] Connection id "0HNE0F4CTA9JI", Request id "0HNE0F4CTA9JI:00000002": done reading request body.
+2025-07-11 16:03:34.671 +03:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to StudentApi.Models1.Role. Path: $.role | LineNumber: 5 | BytePositionInLine: 17.
+2025-07-11 16:03:34.671 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:03:34.672 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:03:34.672 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 16:03:34.672 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:03:34.672 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 16:03:34.672 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 16:03:34.673 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 16:03:34.673 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 16:03:34.673 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 16:03:34.673 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 16:03:34.673 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 16:03:34.674 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Register (StudentApi) in 7.8667ms
+2025-07-11 16:03:34.674 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:03:34.674 +03:00 [DBG] Connection id "0HNE0F4CTA9JI" completed keep alive response.
+2025-07-11 16:03:34.674 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/register - 400 null application/problem+json; charset=utf-8 20.2989ms
+2025-07-11 16:05:43.843 +03:00 [DBG] Connection id "0HNE0F4CTA9JI" received FIN.
+2025-07-11 16:05:43.846 +03:00 [DBG] Connection id "0HNE0F4CTA9JI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-11 16:05:43.847 +03:00 [DBG] Connection id "0HNE0F4CTA9JI" disconnecting.
+2025-07-11 16:05:43.848 +03:00 [DBG] Connection id "0HNE0F4CTA9JI" stopped.
+2025-07-11 16:53:00.251 +03:00 [DBG] Connection id "0HNE0F4CTA9JJ" accepted.
+2025-07-11 16:53:00.253 +03:00 [DBG] Connection id "0HNE0F4CTA9JJ" started.
+2025-07-11 16:53:00.255 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/Auth/register - application/json 126
+2025-07-11 16:53:00.257 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-07-11 16:53:00.257 +03:00 [DBG] Endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-07-11 16:53:00.257 +03:00 [DBG] Request matched endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:53:00.258 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-07-11 16:53:00.259 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-07-11 16:53:00.259 +03:00 [INF] Executing endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:53:00.261 +03:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(StudentApi.Models1.RegisterRequest) on controller StudentApi.Controllers.AuthController (StudentApi).
+2025-07-11 16:53:00.261 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-07-11 16:53:00.261 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-07-11 16:53:00.261 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-07-11 16:53:00.261 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-07-11 16:53:00.262 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-07-11 16:53:00.262 +03:00 [DBG] Executing controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 16:53:00.263 +03:00 [DBG] Executed controller factory for controller StudentApi.Controllers.AuthController (StudentApi)
+2025-07-11 16:53:00.263 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 16:53:00.263 +03:00 [DBG] Attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest' using the name '' in request data ...
+2025-07-11 16:53:00.263 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-07-11 16:53:00.263 +03:00 [DBG] Connection id "0HNE0F4CTA9JJ", Request id "0HNE0F4CTA9JJ:00000001": started reading request body.
+2025-07-11 16:53:00.264 +03:00 [DBG] Connection id "0HNE0F4CTA9JJ", Request id "0HNE0F4CTA9JJ:00000001": done reading request body.
+2025-07-11 16:53:00.268 +03:00 [DBG] JSON input formatter threw an exception: The JSON value could not be converted to StudentApi.Models1.Role. Path: $.role | LineNumber: 5 | BytePositionInLine: 17.
+2025-07-11 16:53:00.268 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:53:00.268 +03:00 [DBG] Done attempting to bind parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:53:00.268 +03:00 [DBG] Attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest' ...
+2025-07-11 16:53:00.268 +03:00 [DBG] Done attempting to validate the bound parameter 'request' of type 'StudentApi.Models1.RegisterRequest'.
+2025-07-11 16:53:00.268 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-07-11 16:53:00.269 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-07-11 16:53:00.269 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-07-11 16:53:00.269 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-07-11 16:53:00.269 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-07-11 16:53:00.269 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-07-11 16:53:00.269 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-07-11 16:53:00.270 +03:00 [INF] Executed action StudentApi.Controllers.AuthController.Register (StudentApi) in 7.8915ms
+2025-07-11 16:53:00.270 +03:00 [INF] Executed endpoint 'StudentApi.Controllers.AuthController.Register (StudentApi)'
+2025-07-11 16:53:00.270 +03:00 [DBG] Connection id "0HNE0F4CTA9JJ" completed keep alive response.
+2025-07-11 16:53:00.270 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/Auth/register - 400 null application/problem+json; charset=utf-8 15.045ms
+2025-07-11 16:53:05.486 +03:00 [INF] Application is shutting down...
+2025-07-11 16:53:05.488 +03:00 [DBG] Hosting stopping
+2025-07-11 16:53:05.502 +03:00 [DBG] Connection id "0HNE0F4CTA9JJ" disconnecting.
+2025-07-11 16:53:05.503 +03:00 [DBG] Connection id "0HNE0F4CTA9JJ" stopped.
+2025-07-11 16:53:05.503 +03:00 [DBG] Connection id "0HNE0F4CTA9JJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-07-11 16:53:05.506 +03:00 [DBG] Hosting stopped

@@ -40,5 +40,17 @@
         <member name="M:StudentApi.Migrations.AddPasswordHashToStudent.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:StudentApi.Migrations.AddRoleToStudent">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddRoleToStudent.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddRoleToStudent.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:StudentApi.Migrations.AddRoleToStudent.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

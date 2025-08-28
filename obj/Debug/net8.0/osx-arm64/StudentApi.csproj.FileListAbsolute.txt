@@ -14,6 +14,7 @@
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/FluentValidation.AspNetCore.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/FluentValidation.DependencyInjectionExtensions.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Humanizer.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.AspNetCore.OpenApi.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Build.Locator.dll
@@ -43,8 +44,10 @@
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.Hosting.Abstractions.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.Logging.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.ObjectPool.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.Options.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.Primitives.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.WebEncoders.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Identity.Client.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Identity.Client.Extensions.Msal.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.IdentityModel.Abstractions.dll
@@ -90,7 +93,9 @@
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.IO.Pipelines.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Memory.Data.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Runtime.Caching.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Security.Cryptography.Pkcs.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Security.Cryptography.ProtectedData.dll
+/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Security.Cryptography.Xml.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Text.Encodings.Web.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Text.Json.dll
 /Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/cs/Microsoft.CodeAnalysis.resources.dll
@@ -192,8 +197,3 @@
 /Users/edahazar/StudentApi/obj/Debug/net8.0/osx-arm64/StudentApi.pdb
 /Users/edahazar/StudentApi/obj/Debug/net8.0/osx-arm64/StudentApi.genruntimeconfig.cache
 /Users/edahazar/StudentApi/obj/Debug/net8.0/osx-arm64/ref/StudentApi.dll
-/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.ObjectPool.dll
-/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.Extensions.WebEncoders.dll
-/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Security.Cryptography.Pkcs.dll
-/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/System.Security.Cryptography.Xml.dll
-/Users/edahazar/StudentApi/bin/Debug/net8.0/osx-arm64/Microsoft.AspNetCore.Authentication.JwtBearer.dll
