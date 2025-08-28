@@ -10,7 +10,7 @@ namespace StudentApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]  // Burayı ekledik, tüm metotlar için giriş zorunlu oldu
+    [Authorize]  
     public class StudentsController : ControllerBase
     {
         private readonly AppDbContext _context;
